@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import { NavParams } from "ionic-angular";
 
 /**
  * Generated class for the ItemDetailPage page.
@@ -8,18 +8,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
-  selector: 'page-item-detail',
-  templateUrl: 'item-detail.html',
+  selector: "page-item-detail",
+  templateUrl: "item-detail.html"
 })
 export class ItemDetailPage {
+  title;
+  description;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ItemDetailPage');
+    this.title = this.navParams.get("item").title;
+    this.description = this.navParams.get("item").description;
   }
-
 }
