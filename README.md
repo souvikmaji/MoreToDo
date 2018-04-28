@@ -1,11 +1,11 @@
-# TODO.IO
+# MoreToDo
 
 A Basic Todo application using ionic.
 
-Use :
+#### To Use :
 ```bash
-git clone https://www.github.com/souvikmaji/ionic-todo.git
-cd ionic-todo
+git clone https://github.com/souvikmaji/MoreToDo.git
+cd MoreToDo
 npm i
 ionic serve
 ```
